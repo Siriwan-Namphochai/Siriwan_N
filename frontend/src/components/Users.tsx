@@ -5,7 +5,8 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
-import Box from "@material-ui/core/Box";
+import Box from '@mui/material/Box';
+import Alert from '@mui/material/Alert';
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -57,7 +58,6 @@ function Users() {
  return (
    <div>
      <Container className={classes.container} maxWidth="md">
-       <Box display="flex">
          <Box flexGrow={1}>
            <Typography
              component="h2"
@@ -68,7 +68,8 @@ function Users() {
              Users
            </Typography>
          </Box>
-         <Box>
+         <Box>     <Box display="flex">
+  
            <Button
             component={RouterLink}
              to="/create"
